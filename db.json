@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "NGuyễn Văn A",
+      "age": "Hà Nội",
+      "address": "a",
+      "sex": "a"
+    },
+    {
+      "id": 2,
+      "name": "Tran Thi B",
+      "age": 25,
+      "address": "Ho Chi Minh City",
+      "gender": "female"
+    },
+    {
+      "id": "3",
+      "name": "3",
+      "age": "a",
+      "address": "a",
+      "sex": "a"
+    }
+  ]
+}

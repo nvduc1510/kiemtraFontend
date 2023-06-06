@@ -1,0 +1,29 @@
+ 
+<table class="table">
+    <thead>
+      <tr>
+        <th>Mã</th>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Địa chỉ</th>
+        <th>Giới tính</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listEmployees">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.sex}}</td>
+        <td>
+            <button class="bg-warning border rounded-3 p-2" style="margin-right: 10px;" routerLink="edit/{{item.id}}">Sửa</button>
+            <button class="bg-danger border rounded-3 p-2" (click)="deleleEmployees(item.id)" >Xoá</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
+  
+
+<button routerLink="create" class="bg-primary border rounded-3 p-2">Đăng ký</button>
